@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="progress">0/0 correct</string>
+    <string name="startButton">Start</string>
+    <string name="question">What is 3 + 4?</string>
+    <string name="secondIncorrect">10</string>
+    <string name="firstIncorrect">8</string>
+    <string name="correct">7</string>
+    <string name="nextButton">Next</string>
+</resources>

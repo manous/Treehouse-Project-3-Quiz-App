@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_quiz_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.example.kore.quizapp.QuizApp"
+                android:background="#d9edb3">
+
+    <Button
+        android:text="@string/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextButton"
+        android:textSize="24sp"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#d9edb3"
+        android:background="@android:color/darker_gray"/>
+
+    <RadioGroup
+        android:id="@+id/answerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/nextButton"
+        android:layout_alignStart="@+id/nextButton">
+
+        <RadioButton
+            android:text="@string/secondIncorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondIncorrectAnswersRadioButton"
+            android:checked="false"
+            android:layout_marginTop="47dp"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:text="@string/firstIncorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstIncorrectAnswersRadioButton"
+            android:checked="false"
+            android:layout_marginTop="47dp"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:text="@string/correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/correctAnswersRadioButton"
+            android:checked="false"
+            android:layout_marginTop="47dp"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/question"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/operationTextView"
+        android:textSize="24sp"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/answerButton"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="@string/progress"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressTextView"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/operationTextView"
+        android:layout_alignRight="@+id/operationTextView"
+        android:layout_alignEnd="@+id/operationTextView"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"/>
+
+</RelativeLayout>
